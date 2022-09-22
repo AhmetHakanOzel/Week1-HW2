@@ -267,6 +267,54 @@ public class Main {
 		else {
 			System.out.println("Mükemmel sayı değildir");
 		}
+		
+		//miniProjeArkadasSayilar
+		
+		int sayia = 2;
+		int sayib = 284;
+		int toplama = 0;
+		int toplamb = 0;
+		
+		for(int z=1;z<sayia;z++) {
+			if(sayia%z==0) {
+				toplama = toplama +z;
+			}
+		}
+		
+		for(int z=1;z<sayib;z++) {
+			if(sayib%z==0) {
+				toplamb = toplamb +z;
+			}
+		}
+		
+		if(sayia==toplamb  && sayib==toplama) {
+			System.out.println("bu iki sayı arkadaştır");
+		}
+		else {
+			System.out.println("bu iki sayı arkadaş değildir");
+		}
+		
+		//miniProjeSayıBulma
+		
+		int[] sayilar = new int[] {1,2,5,7,9,0};
+		int aranacak = 5;
+		boolean varMi = false;
+		
+		for(int sayif: sayilar) {
+			if(sayif==aranacak) {
+				varMi = true;
+				break;
+				
+			}
+		}
+		
+		if(varMi) {
+			System.out.println("Sayı mavcuttur");
+		}
+		else {
+			System.out.println("Sayı mevcut değildir");
+		}
+		
 	}
 
 }
